@@ -1,0 +1,91 @@
+#navBar {
+  background-color: whitesmoke;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  position: fixed;
+  width: 100%;
+
+
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+    gap: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 20px;
+}
+.option a{
+    text-decoration: none;
+    color: #000;
+
+}
+.option a:hover{
+    color: #ffc300;
+    cursor:pointer;
+}
+.logo{
+    display: block;
+    justify-content: flex-start;
+    background-image: url('../../../public/assets/images/logo.png');
+    background-size: cover;
+
+    height:100px;
+    width: 250px;
+}
+.joinnow{
+    background-color: #ffc300;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+    width: 140px;
+}
+.option li:hover{
+    color: orange;
+    cursor:pointer;
+}
+#mobile{
+    display: none;
+}
+.profile{
+    font-size: 10px;
+}
+@media screen and (max-width:850px) {
+    #mobile{
+        display: flex;
+        position: fixed;
+        top: 40px;
+        right: 20px;
+    }
+
+    .option{
+        flex-direction: column;
+        gap: 20px;
+        font-weight: bolder;
+        text-align: center; 
+        position: fixed;
+        background-color: whitesmoke;
+        top:100px;
+        right: 0;
+        height: 100vh;
+        width:70%;
+    }
+    .joinnow{
+        position: fixed;
+        top:35px;
+        right: 80px;
+    }
+    .option.active{
+        right: -650px; 
+
+    }
+}

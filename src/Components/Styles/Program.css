@@ -1,0 +1,64 @@
+#program{
+    padding: 120px 20px 0 20px;
+    height: auto;
+}
+#program h1{
+    font-size: 50px;
+    color: whitesmoke;
+}
+.program-item{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+
+}
+.program-item div{
+    padding: 20px;
+    background-color: #333533;
+    border-radius: 10px;
+    color: whitesmoke;
+
+
+}
+.program-item div:hover{
+    border: 2px solid #ffc300; 
+    cursor: pointer;
+}
+.program-item p{
+    font-size: larger;
+    color: #7f7f7f;
+}
+.program-item h3{
+    font-size: 30px;
+}
+.program-item i{
+    height:50px;
+    width: 50px;
+    background-color: #ffc300;
+}
+.fas{
+    font-size: 45px;
+}
+img{
+    height:100px;
+    width:100px
+}
+@media screen and (max-width: 850px) {
+    .program-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:10px;
+    
+    }
+}
+
+@media screen and (max-width:459px){
+    #program{
+        height: auto;
+    }
+    .program-item{
+        display: flex;
+        flex-direction: column;
+    }
+}

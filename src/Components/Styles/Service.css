@@ -1,0 +1,194 @@
+#service {
+  padding: 120px 20px 0 40px;
+  height: auto;
+  width: auto;
+}
+.service-container {
+  padding-top: 50px;
+}
+.service-plan {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.service-plan div {
+  padding: 20px;
+  background-color: #333533;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+div.available {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.fas {
+  font-size: large;
+  margin-top: 22px;
+  color: #ffc300;
+}
+.plan1:hover,
+.plan2:hover,
+.plan3:hover,
+.plan4:hover {
+  border: 2px solid #ffc300;
+  cursor: pointer;
+}
+
+.services-class {
+  text-align: center;
+}
+.classes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  row-gap: 40px;
+}
+.classes div {
+  padding: 20px;
+  background-color: #333533;
+  border-radius: 10px;
+  color: whitesmoke;
+  height: 200px;
+  max-width: 380px;
+  width: auto;
+  text-align: start;
+
+}
+.gym {
+  background-image: url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltc3xlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease; /* Adding a smooth transition */
+}
+.zumba {
+  background-image: url("https://www.lemongym.lt/wp-content/uploads/2022/09/A7_1088-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+.aerobic {
+  background-image: url("https://www.grxstatic.com/4f3rgqwzdznj/4RhNlPxGDxslNljmLS2dSr/4cbaf720cebc89659c513215f6581233/GettyImages-1195045259.jpg?format=pjpg&auto=webp&width=704");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+.cardio {
+  background-image: url("https://static.toiimg.com/photo/104350083.cms");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+.meditation {
+  background-image: url("https://www.artofliving.org/in-en/app/uploads/2023/06/meditation-for-sleep.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+.kickboxing {
+  background-image: url("https://titleboxingclub.com/manchester-nh/wp-content/uploads/sites/74/2021/07/TITLE-Blog-Adjusted-Image-2-1-1.png");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+.swimming {
+  background-image: url("https://www.craigieleisurecentre.com.au/images/Swimming_Lessons/Swimming-Lessons-Banner-01.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+.gym:hover,
+.zumba:hover,
+.aerobic:hover,
+.cardio:hover,
+.meditation:hover,
+.kickboxing:hover,
+.swimming:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Zoom effect on hover */
+  font-size: 30px;
+  color:#ffc300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.service-testomonals {
+  text-align: center;
+}
+.test-mono {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: auto;
+}
+.test-mono img {
+  border-top-right-radius: 100px;
+  height: 400px;
+  width: 300px;
+}
+.test-mono img {
+    border-top-right-radius: 0;
+    border-top-left-radius: 100px;
+    height: 400px;
+    width: 300px;
+  }
+.review-body {
+  text-align: start;
+  background-color: #333533;
+  height: 300px;
+  border-top-right-radius: 100px;
+}
+.review-body2 {
+    text-align: start;
+    background-color: #333533;
+    height: 300px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 0;
+
+  }
+.review-head {
+  height: 100px;
+}
+.review img {
+  border-top-right-radius: 0;
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (max-width: 850px) {
+  .service-plan {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .classes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    row-gap: 40px;
+  }
+  .classes div {
+    width: 300px;
+  }
+  .test-mono img{
+    display: none;
+  } 
+  .review-body{
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .service-plan {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .classes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    row-gap: 40px;
+  }
+}

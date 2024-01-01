@@ -1,0 +1,50 @@
+#community {
+  padding: 120px 20px 0 40px;
+  height: auto;
+  width: auto;
+}
+.community-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.community-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+}
+.community-logo img{
+    height: 200px;
+    width: 200px;
+}
+.fab{
+    font-size: 50px;
+    color: #ffc300;
+    padding: 20px;
+}
+.fab:hover{
+    cursor: pointer;
+}
+
+.company p:hover,
+.aboutus p:hover,
+.community-contact p:hover{
+    cursor: pointer;
+    color:#ffc300;
+}
+@media screen and (max-width: 850px) {
+    .community-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+}
+@media screen and (max-width: 450px) {
+    .community-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+}
