@@ -20,6 +20,7 @@ background-image: url('../../../public/assets/images/Main.png');
 background-size: cover;
     width: 50%;
     height: 90vh;
+    filter: drop-shadow(20px 0 0 rgba(0, 0, 0, 0.5)); 
 
 }
 .hero-text h3{
@@ -40,6 +41,8 @@ background-size: cover;
     height: 40px;
     cursor: pointer;
     width: 140px;
+    box-shadow: 20px 0 5px rgba(0, 0, 0, 0.5); 
+
 }
 @media screen and (max-width:459px){
     #home{

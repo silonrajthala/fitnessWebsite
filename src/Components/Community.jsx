@@ -16,9 +16,9 @@ class Community extends Component {
             </p>
             <div>
               
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-facebook"></i>
+              <i className="fab fa-instagram"></i>
+              <i className="fab fa-twitter"></i>
             </div>
           </div>
           <div className="company">
